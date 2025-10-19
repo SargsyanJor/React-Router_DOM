@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  color: #2947a9;
+}
