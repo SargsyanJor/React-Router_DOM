@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom"
 import './App.css'
 import { NotFound } from './components/NotFound/NotFound'
 
-function App({user,albums,post}) {
+function App({user,albums,post,comments}) {
 
   return (
     <>
@@ -19,7 +19,7 @@ function App({user,albums,post}) {
         <Route path='/user' element={<User user={user} />} />
         <Route path='/albums' element={<Albums  albums={albums}/>} />
         <Route path='/posts' element={<Posts post={post} />} />
-        <Route path='/comments' element={<Comments />} />
+        <Route path='/comments' element={<Comments comments={comments} />} />
         <Route path='*' element={<NotFound />} />
         
       </Routes>

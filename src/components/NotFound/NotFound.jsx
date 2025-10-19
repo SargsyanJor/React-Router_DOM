@@ -1,7 +1,14 @@
-import React from 'react'
+
+
 
 export const NotFound = () => {
   return (
-    <div>Not Found</div>
+    <div>
+      <div className="container">
+        <div>Not Found</div>
+        <img src="./cat.png" alt="" />
+      </div>
+    </div>
+
   )
 }
