@@ -41,7 +41,7 @@
 }
 
 .postsItem img {
-    width: 300px;
+    max-width: 300px;
 }
 
 .postsItem .id {

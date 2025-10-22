@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Posts.css"
+import { NavLink } from 'react-router-dom'
 
-export const Posts = ({post}) => {
-  
+export const Posts = ({ post }) => {
+
   return (
     <div>
       <div className="container">
@@ -10,17 +11,16 @@ export const Posts = ({post}) => {
           <>
             <h1>Posts</h1>
             <div className="postsBox">
-              {post.map((elm) => {
-                return (
+              {post.map((elm) => (
+                <NavLink to={`/posts/${elm.id}`}>
                   <div key={elm.id} className='postsItem'>
                     <li className='img'><img src={elm.image} alt="" /></li>
                     <li className='id' >#{elm.id}</li>
                     <li className='title'>{elm.title}</li>
                   </div>
-                )
+                </NavLink>
 
-
-              })}
+              ))}
             </div>
           </>
 

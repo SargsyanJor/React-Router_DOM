@@ -10,7 +10,7 @@ export const Nav = () => {
         <>
 
             <nav>
-                <NavLink to="/user">User</NavLink>
+                <NavLink to="/">User</NavLink>
                 <NavLink to="/albums">Albums </NavLink>
                 <NavLink to="/posts">Posts</NavLink>
                 <NavLink to="/comments">Comments </NavLink>
