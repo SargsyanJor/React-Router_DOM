@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+}
+
+.product {
+    border: 1px solid #2947a9;
+    margin: 100px ;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.prodBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: all 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+.prodBtn:hover {
+    transform: scale(1.1);
+}
+
+.prodBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prodText {
+    max-width: 300px;
+}
+
+.prodTitle {
+    margin-bottom: 50px;
+}
+
+.prodImg {
+    width: 500px;
+}

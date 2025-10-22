@@ -6,7 +6,7 @@ export const Comments = ({comments}) => {
       <div className="container">
         <div className="comments">
           <>
-            <h1>Commnets</h1>
+            <h1>Comments</h1>
             <div className="commentsBox">
               {comments.map((elm) => {
                 return (
