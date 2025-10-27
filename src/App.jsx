@@ -1,4 +1,5 @@
 import { User } from './components/User/User'
+import { UserParams } from './components/userParams/UserParams'
 import { Albums } from './components/Albums/Albums'
 import { Posts } from './components/Posts/Posts'
 import { Product } from './components/Product/Product'
@@ -9,7 +10,7 @@ import { Layout } from './components/Layout/Layout'
 
 import './App.css'
 
-function App({ user, albums, post, comments }) {
+function App({ post }) {
 
   return (
     <>
@@ -17,12 +18,12 @@ function App({ user, albums, post, comments }) {
 
       <Routes>
         <Route path='/' element={<Layout />}>
-
-          <Route index element={<User user={user} />} />
-          <Route path='/albums' element={<Albums albums={albums} />} />
+          <Route path='/' element={<User />} />
+          <Route path='/:id' element={<UserParams />} />
+          <Route path='/albums' element={<Albums />} />
           <Route path='/posts' element={<Posts post={post} />} />
           <Route path='/posts/:id' element={<Product post={post} />} />
-          <Route path='/comments' element={<Comments comments={comments} />} />
+          <Route path='/comments' element={<Comments />} />
           <Route path='*' element={<NotFound />} />
 
         </Route>

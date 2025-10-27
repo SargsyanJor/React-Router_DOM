@@ -1,6 +1,18 @@
 import "./Comments.css"
 
-export const Comments = ({comments}) => {
+import React, { useEffect, useState } from 'react';
+
+export const Comments = () => {
+
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/comments')
+      .then(response => response.json())
+      .then(json => setComments(json))
+
+  }, []);
+
   return (
     <div>
       <div className="container">

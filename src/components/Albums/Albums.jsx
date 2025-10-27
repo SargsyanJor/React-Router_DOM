@@ -1,7 +1,17 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./Albums.css"
 
-export const Albums = ({albums}) => {
+export const Albums = () => {
+
+  const [albums, setAlbums] = useState([])
+  
+    useEffect(() => {
+      fetch('https://jsonplaceholder.typicode.com/albums')
+      .then(response => response.json())
+      .then(json => setAlbums(json))
+    }, []);
+
+
   return (
     <div>
       <div className="container">

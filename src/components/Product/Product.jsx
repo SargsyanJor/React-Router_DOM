@@ -7,6 +7,7 @@ export const Product = ({ post }) => {
     const navigate = useNavigate()
 
     const prod = post.find((elm) => elm.id === +id)
+    
 
     const goBack = () => {
         navigate(-1)
